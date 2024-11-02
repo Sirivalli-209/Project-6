@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.well-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    height:100px;
+    background-color: #e07979;
+    font-family: serif;
+}
+.well-1.active{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 10000;
+}
+.well-1 .navbar a{
+    padding:9rem 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color:var(--black);
+}
+.well-1 .navbar a:hover{
+    background:var(--green);
+    color:#4ca8ee;
+}
+.well-1 .icons a{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding-left: 1rem;
+}
+.well-1 .icons a:hover{
+    color:var(--green);
+}
+h2{
+    text-align: center;
+    color: black;
+    font-family: serif;
+}
+.well-2{
+    background-color: rgb(66, 154, 154);
+    height: 60px;
+    justify-content: center;
+}
+h3{
+    color: #d72121;
+    font-family: serif;
+}
+.row{
+    padding: auto;
+    margin-left: 5%;
+}
+p{
+    padding: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: serif;
+}
+h4{
+    font-family: serif;
+}
+footer {
+    background-color: #463737; /* Dark background */
+    color: #c6d0d9; /* Light text */
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+footer h5 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #f8f9fa;
+    font-family: serif;
+}
+
+footer p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: serif;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12; /* Highlight links on hover with an artistic accent color */
+}
+
+footer hr {
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-icons a {
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    font-family: serif;
+}
+
+.footer-icons a:hover {
+    color: #f39c12;
+}
+
+
+
+/* Copyright Section */
+footer .row.align-items-center {
+    margin-top: 20px;
+}
+
+footer .text-md-left {
+    font-size: 14px;
+    font-family: serif;
+}
+
+footer .text-md-right {
+    font-size: 14px;
+    text-align: right;
+    font-family: serif;
+}
+@media (max-width: 767px) {
+    /* Adjust header layout */
+
+    /* Adjust navbar */
+    .well-1 .navbar a {
+        font-size: 1.4rem;
+        padding: 0.5rem;
+    }
+}
+/* Tablet Screens (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust header layout */
+
+    /* Adjust navbar */
+    .well-1 .navbar a {
+        font-size: 1.6rem;
+        padding: 0.7rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .col-sm-3 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .well-2 {
+        height: 50px;
+        font-size: 8px;
+    }
+
+    p {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 14px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
+    .col-sm-3 {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin-left: 0;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Small Desktop Screens */
+@media only screen and (max-width: 1024px) {
+    .col-sm-3 {
+        width: 22%;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin-left: 2%;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer .text-md-left, footer .text-md-right {
+        text-align: center;
+    }
+    
+    footer .footer-icons a {
+        margin-right: 10px;
+    }
+}
